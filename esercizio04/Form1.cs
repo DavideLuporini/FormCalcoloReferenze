@@ -14,13 +14,13 @@ namespace esercizio04
             string surname = textBox_surname.Text;
             DateTime birthDay = dateTimePicker_birthday.Value;
             string city = textBox_city.Text;
-            User utente = new User(name, surname, birthDay, city);
+            User user = new User(name, surname, birthDay, city);
 
-            string nomeCompleto = utente.getCompleteName(name, surname);
-            string currentAge = utente.CalculateAge(birthDay);
-            string letterCount = utente.DisplayLetterCount(name, surname, city);
+            string completeName = user.getCompleteName(name, surname);
+            string currentAge = user.CalculateAge(birthDay);
+            string letterCount = user.DisplayLetterCount(name, surname, city);
 
-            label_risultato.Text = $"il nome completo è : {nomeCompleto}\netà: {currentAge} \n{letterCount}";
+            label_risultato.Text = $"il nome completo è : {completeName}\netà: {currentAge} \n{letterCount}";
         }
 
         private void dateTimePicker_birthday_ValueChanged(object sender, EventArgs e)

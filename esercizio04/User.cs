@@ -20,14 +20,14 @@ namespace esercizio04
 
         public string getCompleteName(string nome, string cognome)
         {
-            string nomeCompleto = $"{nome} {cognome}";
-            return nomeCompleto;
+            string completeName = $"{nome} {cognome}";
+            return completeName;
         }
 
-        public string DisplayLetterCount(string name, string surname, string città)
+        public string DisplayLetterCount(string name, string surname, string city)
         {
-            string completeString = (name + surname + città).ToLower().Replace(" ", "");
-            string risultato = string.Empty;
+            string completeString = (name + surname + city).ToLower().Replace(" ", "");
+            string result = string.Empty;
             List<char> charList = new List<char>();
             StringBuilder sb = new StringBuilder();
             foreach (char c in completeString)
@@ -37,10 +37,10 @@ namespace esercizio04
                     charList.Add(c);
                     int freq = completeString.Count(f => (f == c));
                     sb.Append($"il carattere {c} è presente: {freq} volte\n");
-                    risultato = sb.ToString();
+                    result = sb.ToString();
                 }
             }
-            return risultato;
+            return result;
         }
 
     }
