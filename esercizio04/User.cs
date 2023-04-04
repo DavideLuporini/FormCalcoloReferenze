@@ -18,18 +18,18 @@ namespace esercizio04
             City = city;
         }
 
-        public string getCompleteName(string nome, string cognome)
+        public static string GetCompleteName(string nome, string cognome)
         {
             string completeName = $"{nome} {cognome}";
             return completeName;
         }
 
-        public string DisplayLetterCount(string name, string surname, string city)
+        public static string DisplayLetterCount(string name, string surname, string city)
         {
             string completeString = (name + surname + city).ToLower().Replace(" ", "");
             string result = string.Empty;
-            List<char> charList = new List<char>();
-            StringBuilder sb = new StringBuilder();
+            List<char> charList = new();
+            StringBuilder sb = new();
             foreach (char c in completeString)
             {
                 if (!charList.Contains(c))

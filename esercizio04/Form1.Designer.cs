@@ -60,7 +60,7 @@
             dateTimePicker_birthday.Name = "dateTimePicker_birthday";
             dateTimePicker_birthday.Size = new Size(300, 31);
             dateTimePicker_birthday.TabIndex = 2;
-            dateTimePicker_birthday.ValueChanged += dateTimePicker_birthday_ValueChanged;
+            dateTimePicker_birthday.ValueChanged += DateTimePickerBirthdayValueChanged;
             // 
             // textBox_city
             // 
@@ -113,7 +113,7 @@
             button_calc.TabIndex = 8;
             button_calc.Text = "Mostra";
             button_calc.UseVisualStyleBackColor = true;
-            button_calc.Click += button_calc_Click;
+            button_calc.Click += ButtonCalcClick;
             // 
             // label_risultato
             // 

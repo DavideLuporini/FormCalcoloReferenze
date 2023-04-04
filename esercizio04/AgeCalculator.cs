@@ -4,13 +4,13 @@
     {
         private const int DaysPerYear = 365;
         private const int DaysPerMonth = 30;
-        public string CalculateAge(DateTime birthDate)
+        public static string CalculateAge(DateTime birthDate)
         {
             DateTime today = DateTime.Today;
             int totalDays = GetTotalDays(birthDate, today);
             int totalYears = GetTotalYears(totalDays);
             int totalMonths = GetTotalMonths(totalDays);
-            return $"{totalYears} year(s), {totalMonths} month(s)";
+            return $"{totalYears} anni(o), {totalMonths} mesi(e)";
         }
 
         private static int GetTotalDays(DateTime startDate, DateTime endDate)
